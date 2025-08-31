@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack 'n Seek - Enter the Void</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Initializing Void Protocol...</p>
+        </div>
+    </div>
+
+    <div id="main-container">
+        <!-- Background Elements -->
+        <div id="stars-container"></div>
+        <div id="nebula-overlay"></div>
+        
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <div class="hero-content">
+                <h1 class="event-title" id="event-title">
+                    <span class="glitch-text">Hack</span>
+                    <span class="glitch-text">'n</span>
+                    <span class="glitch-text">Seek</span>
+                </h1>
+                
+                <p class="subtitle" id="subtitle">Decode the Unknown</p>
+                
+                <div class="countdown-container" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                
+                <button class="cta-button" id="enter-void">Enter the Void</button>
+            </div>
+        </section>
+
+        <!-- Animation Trigger Button -->
+        <button class="click-me-button" id="click-me">
+            <span class="button-text">Click Me</span>
+            <div class="button-glow"></div>
+        </button>
+
+        <!-- Glitch Animation Elements -->
+        <div id="animation-container">
+            <div id="wormhole"></div>
+            <div id="light-tunnel"></div>
+            <div id="logo-reveal">
+                <div class="logo-container">
+                    <h2 class="final-logo">Hack 'n Seek</h2>
+                    <p class="final-subtitle">Decode the Unknown</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
